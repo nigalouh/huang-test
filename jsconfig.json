@@ -1,19 +1,17 @@
+//配置@别名
+//@代表的是src文件夹，这样将来文件过多，找的时候方便很多
+
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
-    "baseUrl": "./",
-    "moduleResolution": "node",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*":[
+                "src/*"
+            ]
+        }
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
+    "exclude": [
+        "node_modules",
+        "dist"
     ]
-  }
 }
